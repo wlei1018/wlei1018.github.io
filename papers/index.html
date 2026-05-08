@@ -1,0 +1,507 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>论文集 | Papers | Hexo</title><meta name="author" content="wlei1018"><meta name="copyright" content="wlei1018"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Research             Learned Image Video Compression                                   A Video Preproces">
+<meta property="og:type" content="website">
+<meta property="og:title" content="论文集 | Papers">
+<meta property="og:url" content="https://wlei1018.github.io/papers/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Research             Learned Image Video Compression                                   A Video Preproces">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://wlei1018.github.io/img/butterfly-icon.png">
+<meta property="article:published_time" content="2026-05-08T09:56:57.574Z">
+<meta property="article:modified_time" content="2026-05-08T10:16:01.700Z">
+<meta property="article:author" content="wlei1018">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://wlei1018.github.io/img/butterfly-icon.png"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://wlei1018.github.io/papers/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.5-b1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '论文集 | Papers',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/me/"><i class="fa-fw fas fa-file"></i><span> Me</span></a></div><div class="menus_item"><a class="site-page" href="/papers/"><i class="fa-fw fas fa-file"></i><span> &quot;论文集 | Papers&quot;</span></a></div><div class="menus_item"><a class="site-page" href="/papers/"><i class="fa-fw fas fa-file"></i><span> &quot;Papers&quot;</span></a></div></div></div></div><div class="page type-papers" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Hexo</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/me/"><i class="fa-fw fas fa-file"></i><span> Me</span></a></div><div class="menus_item"><a class="site-page" href="/papers/"><i class="fa-fw fas fa-file"></i><span> &quot;论文集 | Papers&quot;</span></a></div><div class="menus_item"><a class="site-page" href="/papers/"><i class="fa-fw fas fa-file"></i><span> &quot;Papers&quot;</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">论文集 | Papers</h1></div></header><main class="layout hide-aside" id="content-inner"><div id="page"><div class="container" id="article-container"><div class="papers-portal">
+  <div class="portal-header">
+    <div class="search-box">
+      <input type="text" id="paperSearch" placeholder="搜索论文标题、机构或内容..." oninput="filterPapers()">
+      <i class="fas fa-search"></i>
+    </div>
+    <div class="type-filters" id="typeFilters">
+      <!-- Generated by JS -->
+    </div>
+  </div>
+
+  <div class="paper-grid" id="paperGrid">
+    
+      
+        <div class="paper-card" data-index="0" data-source="Learned Image Video Compression" onclick="showPaperDetail('0')">
+          <div class="card-tags">
+            <span class="tag-mini">Research</span>
+            <span class="tag-source">Learned Image Video Compression</span>
+          </div>
+          <div class="card-main">
+            <h4 class="title-en">A Video Preprocessing Framework Tailored for Machine Vision Tasks</h4>
+            <h3 class="title-zh">面向机器视觉任务的视频预处理框架</h3>
+            <p class="summary-text">本文针对视频压缩传输中面向机器视觉任务的编码优化问题，提出了一种专为机器视觉任务设计的视频预处理框架。该方法引入神经网络预处理器，在编码前保留对下游任务至关重要的信息，从而提升率-精度性能。同时引入可微分虚拟编解码器，在训练阶段提供码率和失真约束，测试时直接使用标准编解码器，便于实际部署。在两种典型下游任务和多种骨干网络上的实验表明，该方法相比标准编解码器锚点版本可节省超过15%的码率。</p>
+          </div>
+          <div class="card-footer">
+            <div class="footer-info">
+              <span><i class="fas fa-university"></i> </span>
+              <span><i class="far fa-calendar-alt"></i> Fri May 08 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</span>
+            </div>
+            <div class="footer-links">
+              <a href="https://arxiv.org/abs/2512.15331" target="_blank" onclick="event.stopPropagation()"><i class="fas fa-file-pdf"></i> PDF</a>
+              
+            </div>
+          </div>
+        </div>
+      
+    
+  </div>
+</div>
+
+<!-- Paper Detail Modal -->
+<div id="paperModal" class="paper-modal" onclick="closePaperModal()">
+  <div class="paper-modal-content" onclick="event.stopPropagation()">
+    <span class="close-btn" onclick="closePaperModal()">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <div class="modal-body">
+      <div class="modal-score">
+        <span class="score-label">可读价值评分:</span>
+        <span id="modalScore" class="score-value"></span>
+        <span class="score-star">/ 10</span>
+      </div>
+      
+<pre><code>  &lt;section&gt;
+    &lt;h4&gt;&lt;i class=&quot;fas fa-quote-left&quot;&gt;&lt;/i&gt; AI 评语&lt;/h4&gt;
+    &lt;p id=&quot;modalValue&quot; class=&quot;value-text&quot;&gt;&lt;/p&gt;
+  &lt;/section&gt;
+
+  &lt;section&gt;
+    &lt;h4&gt;&lt;i class=&quot;fas fa-book-open&quot;&gt;&lt;/i&gt; 中文摘要&lt;/h4&gt;
+    &lt;p id=&quot;modalAbstract&quot;&gt;&lt;/p&gt;
+  &lt;/section&gt;
+  
+  &lt;div class=&quot;modal-details-grid&quot;&gt;
+    &lt;section&gt;
+      &lt;h4&gt;&lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt; 核心创新&lt;/h4&gt;
+      &lt;div id=&quot;modalInnovations&quot;&gt;&lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section&gt;
+      &lt;h4&gt;&lt;i class=&quot;fas fa-tools&quot;&gt;&lt;/i&gt; 核心方法&lt;/h4&gt;
+      &lt;p id=&quot;modalMethods&quot;&gt;&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;section&gt;
+      &lt;h4&gt;&lt;i class=&quot;fas fa-exclamation-triangle&quot;&gt;&lt;/i&gt; 局限性&lt;/h4&gt;
+      &lt;p id=&quot;modalLimitations&quot;&gt;&lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+  </div>
+</div>
+
+<style>
+.papers-portal {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.portal-header {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.search-box {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+.search-box input {
+  width: 100%;
+  padding: 12px 20px 12px 45px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: all 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.search-box input:focus {
+  border-color: #409eff;
+  box-shadow: 0 4px 12px rgba(64,158,255,0.2);
+  outline: none;
+}
+.search-box i {
+  position: absolute;
+  left: 18px;
+  top: 15px;
+  color: #999;
+}
+.type-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.filter-chip {
+  padding: 5px 15px;
+  border-radius: 15px;
+  background: #f0f2f5;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+.filter-chip.active {
+  background: #409eff;
+  color: #fff;
+}
+
+.paper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+}
+.paper-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  border: 1px solid #eee;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+.paper-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  border-color: #409eff;
+}
+.card-tags {
+  margin-bottom: 12px;
+  display: flex;
+  gap: 8px;
+}
+.tag-mini {
+  background: #e1f3d8;
+  color: #67c23a;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+}
+.tag-source {
+  background: #f0f7ff;
+  color: #409eff;
+  padding: 2px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.card-main {
+  flex: 1;
+}
+.title-en {
+  font-size: 14px;
+  color: #909399;
+  margin: 0 0 5px 0;
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.title-zh {
+  font-size: 18px;
+  margin: 0 0 12px 0;
+  color: #303133;
+  line-height: 1.4;
+}
+.summary-text {
+  font-size: 14px;
+  color: #606266;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card-footer {
+  border-top: 1px solid #f2f6fc;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: #909399;
+}
+.footer-links a {
+  margin-left: 12px;
+  color: #409eff;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+/* Modal */
+.paper-modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+}
+.paper-modal-content {
+  background: #fff;
+  margin: 5vh auto;
+  padding: 30px;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 20px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+.modal-score {
+  background: #fdf6ec;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.score-label { font-weight: bold; color: #e6a23c; }
+.score-value { font-size: 28px; color: #e6a23c; font-weight: 800; }
+.score-star { color: #999; }
+.value-text { font-style: italic; color: #606266; line-height: 1.6; }
+.modal-details-grid {
+  display: grid;
+  gap: 20px;
+}
+.modal-body h4 {
+  margin: 20px 0 10px 0;
+  color: #303133;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.modal-body p { line-height: 1.7; color: #555; }
+</style>
+
+<script>
+let activeFilters = new Set();
+const paperData = [{"title_zh":"面向机器视觉任务的视频预处理框架","title_en":"A Video Preprocessing Framework Tailored for Machine Vision Tasks","date":"2026-05-08T00:00:00.000Z","institution":"","summary":"本文针对视频压缩传输中面向机器视觉任务的编码优化问题，提出了一种专为机器视觉任务设计的视频预处理框架。该方法引入神经网络预处理器，在编码前保留对下游任务至关重要的信息，从而提升率-精度性能。同时引入可微分虚拟编解码器，在训练阶段提供码率和失真约束，测试时直接使用标准编解码器，便于实际部署。在两种典型下游任务和多种骨干网络上的实验表明，该方法相比标准编解码器锚点版本可节省超过15%的码率。","url":"https://arxiv.org/abs/2512.15331","code":"","score":6,"abstract":"视频从终端压缩传输用于机器视觉任务的趋势日益增长。然而，大多数视频编码优化方法侧重于根据人类感知指标最小化失真，忽略了机器视觉系统提出的更高要求。本文提出了一种面向机器视觉任务的视频预处理框架来应对这一挑战。所提方法引入神经网络预处理器，保留对后续任务至关重要的信息，从而提升率-精度性能。进一步引入可微分虚拟编解码器，在训练阶段提供码率和失真约束。测试时直接使用广泛使用的标准编解码器，因此该方案可轻松应用于实际场景。在两种典型下游任务和多种骨干网络上进行了大量实验，结果表明该方法相比仅使用标准编解码器锚点版本可节省超过15%的码率。","innovations":"1. 提出面向机器视觉任务的视频预处理框架，在编码前通过神经预处理器保留任务关键信息；2. 引入可微分虚拟编解码器，在训练阶段提供码率和失真约束，解决标准编解码器不可微的问题；3. 测试阶段直接兼容标准编解码器，具有良好的实际部署能力。","methods":"核心技术包括：(1) 神经网络预处理器，对输入视频进行预处理以保留机器视觉任务所需的关键信息；(2) 可微分虚拟编解码器，模拟标准编解码器的编码行为，在训练中提供码率和失真的梯度信号；(3) 端到端训练策略，联合优化预处理器与下游任务性能。","limitations":"1. 仅从摘要来看，未说明具体支持哪些标准编解码器及其版本；2. 仅在两种下游任务上验证，泛化性有待进一步验证；3. 15%的码率节省幅度相对有限；4. 未讨论预处理器引入的额外计算开销和延迟；5. 缺少与其他面向机器的视频编码方法的对比。","value":"该论文针对视频编码面向机器（VCM）这一热门方向，提出了实用性较强的预处理方案，兼容标准编解码器是其亮点。适合关注VCM、视频压缩与机器视觉交叉领域的研究者阅读。但从摘要信息来看，技术细节和实验深度有待进一步了解。","source_name":"Learned Image Video Compression"}];
+
+function initFilters() {
+  const sources = [...new Set(paperData.map(p => p.source_name))];
+  const filterContainer = document.getElementById('typeFilters');
+  sources.forEach(source => {
+    if (!source) return;
+    const chip = document.createElement('div');
+    chip.className = 'filter-chip';
+    chip.innerText = source;
+    chip.onclick = () => toggleFilter(source, chip);
+    filterContainer.appendChild(chip);
+  });
+}
+
+function toggleFilter(source, el) {
+  if (activeFilters.has(source)) {
+    activeFilters.delete(source);
+    el.classList.remove('active');
+  } else {
+    activeFilters.add(source);
+    el.classList.add('active');
+  }
+  filterPapers();
+}
+
+function filterPapers() {
+  const query = document.getElementById('paperSearch').value.toLowerCase();
+  const cards = document.querySelectorAll('.paper-card');
+  
+  cards.forEach(card => {
+    const idx = card.getAttribute('data-index');
+    const paper = paperData[idx];
+    const source = paper.source_name;
+    
+    const matchesQuery = !query || 
+      (paper.title_zh && paper.title_zh.toLowerCase().includes(query)) || 
+      (paper.title_en && paper.title_en.toLowerCase().includes(query)) ||
+      (paper.institution && paper.institution.toLowerCase().includes(query)) ||
+      (paper.summary && paper.summary.toLowerCase().includes(query));
+      
+    const matchesFilter = activeFilters.size === 0 || activeFilters.has(source);
+    
+    card.style.display = (matchesQuery && matchesFilter) ? 'flex' : 'none';
+  });
+}
+
+function showPaperDetail(index) {
+  const paper = paperData[index];
+  document.getElementById('modalTitle').innerText = paper.title_zh;
+  document.getElementById('modalScore').innerText = paper.score || 'N/A';
+  document.getElementById('modalValue').innerText = paper.value || '暂无评语';
+  document.getElementById('modalAbstract').innerText = paper.abstract || '暂无摘要';
+  document.getElementById('modalMethods').innerText = paper.methods || '暂无详细描述';
+  document.getElementById('modalLimitations').innerText = paper.limitations || '暂无描述';
+  
+  const innovations = document.getElementById('modalInnovations');
+  innovations.innerHTML = '';
+  if (paper.innovations) {
+    const list = paper.innovations.split('
+').filter(l => l.trim());
+    const ul = document.createElement('ul');
+    list.forEach(item => {
+      const li = document.createElement('li');
+      li.innerText = item.replace(/^[-*]s*/, '');
+      ul.appendChild(li);
+    });
+    innovations.appendChild(ul);
+  } else {
+    innovations.innerText = '暂无描述';
+  }
+
+  document.getElementById('paperModal').style.display = "block";
+}
+
+function closePaperModal() {
+  document.getElementById('paperModal').style.display = "none";
+}
+
+document.addEventListener('DOMContentLoaded', initFilters);
+</script>
+</div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By wlei1018</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 6.3.0</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.5-b1</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.5-b1"></script><script src="/js/main.js?v=5.5.5-b1"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
